@@ -1,0 +1,7 @@
+.carousel-indicators button {
+background-color: rgb(44, 85, 85) !important;
+}
+.carousel-caption {
+    background-color: rgb(44, 85, 85, 0.5) !important;
+   color: black !important;
+}
