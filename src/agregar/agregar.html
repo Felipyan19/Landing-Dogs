@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Dogs</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../assets/dog_1998627.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
+        </script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+
+<body style="background-color: beige;">
+    <div class="container-fluid m-0 p-0 w-100 h-100">
+
+        <nav class="navbar navbar-expand-lg bg-secondary fixed-top">
+            <div class="container-fluid px-5 mx-4">
+                <a class="navbar-brand text-white px-3 rounded" href="../../index.html">Dogs</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../hembras/hembras.html">Hembras</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../machos/machos.html">Machos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../agregar/agregar.html">Agregar</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container d-flex justify-content-center mt-5 pt-5">
+            <h1>Agregar</h1>
+        </div>
+
+        <div id="cardsContainer" class="container d-flex justify-content-center align-items-center">
+            <div class="card m-5 p-5 w-50" style="background: rgb(0, 0, 0, 0.2);">
+
+                <form id="form" class="needs-validation" novalidate>
+
+                    <div class="mb-3">
+                      <label for="name" class="form-label">Nombre</label>
+                      <input type="text" class="form-control" id="name" placeholder="Ingrese el nombre" name="titulo" required>
+                      <div class="valid-feedback">
+                        ¡Se ve bien!
+                      </div>
+                      <div class="invalid-feedback">
+                        Por favor, ingrese un nombre.
+                      </div>
+                    </div>
+            
+                    <div class="mb-3">
+                      <label for="gender" class="form-label">Género</label>
+                      <select class="form-select" id="gender" 
+                        aria-label="Seleccione el género" 
+                        name="genero" valuedefault="" required>
+                        <option selected disabled value="">Seleccione el género</option>
+                        <option value="Macho">Macho</option>
+                        <option value="Hembra">Hembra</option>
+                      </select>
+                      <div class="valid-feedback">
+                        ¡Se ve bien!
+                      </div>
+                      <div class="invalid-feedback">
+                        Por favor, seleccione un género.
+                      </div>
+                    </div>
+            
+                    <div class="mb-3">
+                      <label for="description" class="form-label">Descripción</label>
+                      <textarea class="form-control" id="description" rows="3" placeholder="Ingrese la descripción" name="contenido" required></textarea>
+                      <div class="valid-feedback">
+                        ¡Se ve bien!
+                      </div>
+                      <div class="invalid-feedback">
+                        Por favor, ingrese una descripción.
+                      </div>
+                    </div>
+            
+                    <div class="mb-3">
+                      <label for="image" class="form-label">URL de la Imagen</label>
+                      <input type="url" class="form-control" id="image" placeholder="Ingrese la URL de la imagen" name="imagen" required>
+                      <div class="valid-feedback">
+                        ¡Se ve bien!
+                      </div>
+                      <div class="invalid-feedback">
+                        Por favor, ingrese una URL válida.
+                      </div>
+                    </div>
+            
+                    <div class="d-flex justify-content-center">
+                      <button type="submit" class="btn mt-3" style="background-color: rgb(0, 0, 0, 0.4);">Agregar</button>
+                    </div>
+            
+                  </form>
+
+            </div>
+          </div>
+
+    </div>
+
+    <footer class="footer mt-5 bg-secondary text-dark">
+        <div class="container fs-6">
+            <div class="d-flex justify-content-between">
+                <div class="">
+                    <h5 class="py-3">Enlaces útiles</h5>
+                    <ul>
+                        <li><i class="fas fa-home"></i> <a href="#">Inicio</a></li>
+                        <li><i class="fas fa-users"></i> <a href="#">Acerca de nosotros</a></li>
+                        <li><i class="fas fa-box"></i> <a href="#">Productos</a></li>
+                        <li><i class="fas fa-envelope"></i> <a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="">
+                    <h5 class="py-3">Contacto</h5>
+                    <p><i class="fas fa-map-marker-alt"></i> Dirección: 123 Calle Principal, Ciudad</p>
+                    <p><i class="fas fa-phone"></i> Teléfono: +1234567890</p>
+                    <p><i class="fas fa-envelope"></i> Email: info@example.com</p>
+                </div>
+                <div class="">
+                    <h5 class="py-3">Síguenos</h5>
+                    <ul>
+                        <li><i class="fab fa-facebook"></i> <a href="#">Facebook</a></li>
+                        <li><i class="fab fa-twitter"></i> <a href="#">Twitter</a></li>
+                        <li><i class="fab fa-instagram"></i> <a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
