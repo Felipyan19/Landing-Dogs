@@ -20,7 +20,7 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
-<body id="body">
+<body id="body" class="w-100 h-100">
     <div class="container-fluid m-0 p-0 w-100 h-100">
 
         <nav class="navbar navbar-expand-lg bg-secondary fixed-top">
@@ -47,19 +47,17 @@
             </div>
         </nav>
 
-        <section id="carouselExampleCaptions" class="carousel slide mx-3 mb-4" style="margin-top:7% ;">
-
-            <div class="carousel-indicators"></div>
-            <div class="carousel-inner">
-                <div class="carousel-item active d-flex justify-content-center align-items-center">
-                    <img src="../../assets/pexels-dominika-roseclay-2023384.jpg"
-                        style="max-width: 100%; max-height: 400px; object-fit: cover;"
-                        alt="Aspect ratio image"
-                        class="shadow m-1"
-                        id="ImgCarrusel">
+        <section id="carouselExampleCaptions" class="carousel-fullscreen carousel slide mx-3 mb-4">
+            <div class="carousel-inner d-flex align-items-center">
+                <div class="carousel-item active d-flex justify-content-center align-items-center h-100">
+                        <img src="../../assets/pexels-dominika-roseclay-2023384.jpg"
+                            style="max-width: 100%; max-height: 89vh; object-fit: fill;"
+                            alt=""
+                            class="shadow m-1"
+                            id="ImgCarrusel">
                     <div class="carousel-caption d-none d-md-block shadow" style="background-color: rgba(0, 0, 0, 0.5);">
-                        <h5>First slide label</h5>
-                        <p>Some representative placeholder content for the first slide.</p>
+                        <h5 id="tituloCard">Pepe</h5>
+                        <p id="textCard">Pepe es un perro de raza Labrador Retriever. Tiene un pelaje dorado y es muy juguetón. Le encanta correr por el parque y jugar con su pelota.</p>
                     </div>
                 </div>
             </div>

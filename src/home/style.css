@@ -1,0 +1,32 @@
+body, .main-container {
+    min-height: 100vh; /* 100% of the viewport height */
+  }
+
+  .hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s linear 300ms, opacity 300ms;
+  }
+  
+  .visible {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 300ms;
+  }
+
+  .carousel-fullscreen {
+    width: 97vw; /* 100% of the viewport width */
+    height: 90vh; /* 100% of the viewport height */
+   margin-top: 4%;
+}
+
+.carousel-inner{
+    width: 100vw; /* 100% of the viewport width */
+    height: 90vh;  
+}
+
+.selected-card {
+    border: 2px solid #007bff; /* Cambiar el color del borde */
+    box-shadow: 0px 0px 10px rgba(0, 123, 255, 0.5); /* Agregar una sombra */
+    background-color: #f8f9fa; /* Cambiar el color de fondo */
+}
